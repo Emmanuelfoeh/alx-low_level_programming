@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 /**
@@ -8,24 +7,21 @@
 */
 int main(void)
 {
-  int tens;
-  int ones;
-
-  for (tens = 0; tens <= 9; tens++)
-    {
-      for (ones = tens + 1; ones <= 9; ones++)
-	{
-	  putchar(tens + '0');
-	  putchar(ones + '0');
-
-	  if (tens < 8)
-	    {
-	      putchar(',');
-	      putchar(' ');
-	    }
-	}
-    }
-  putchar('\n');
-
-  return (0);
+int num1;
+int num2;
+for (num1 = 0; num1 <= 9; num1++)
+{
+for (num2 = num2 + 1; num2 <= 9; num2++)
+{
+putchar(num1 + '0');
+putchar(num2 + '0');
+if (num1 < 8)
+{
+putchar(',');
+putchar(' ');
+}
+}
+}
+putchar('\n');
+return (0);
 }

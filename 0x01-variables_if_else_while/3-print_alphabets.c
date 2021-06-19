@@ -1,15 +1,29 @@
 #include <stdio.h>
 
-/* printing the alphabet */
+/**
+ * main - Entry point
+ *
+ * Description: Prints the alphabet using ascii values.
+ *
+ * Return: Always 0
+ */
+
 int main(void)
 {
-	char c;
+	char letter;
 
-	for (c = 'a'; c <= 'z'; c++)
-		putchar(c);
-	for (c = 'A'; c <= 'Z'; c++)
-		putchar(c);
-		putchar('\n');
-
+	letter = 'a';
+	while (letter != '{')
+	{
+		putchar (letter);
+		letter++;
+	}
+	letter = 'A';
+	while (letter != '[')
+	{
+		putchar (letter);
+		letter++;
+	}
+	putchar('\n');
 	return (0);
 }

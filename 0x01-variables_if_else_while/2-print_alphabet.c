@@ -1,17 +1,23 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
+ * main - Entry point of code
  *
- * Return: Always 0 (Success)
+ * Description: Prints the alphabet using ascii values
+ *
+ * Return: Always 0
  */
+
 int main(void)
 {
+	char letter;
 
-	char c;
-
-	for (c = 'a'; c <= 'z'; c++)
-		putchar(c);
-		putchar('\n');
-
-return (0);
+	letter = 'a';
+	while (letter != '{')
+	{
+		putchar (letter);
+		letter++;
+	}
+	putchar('\n');
+	return (0);
 }
